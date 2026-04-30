@@ -117,4 +117,10 @@ REST_FRAMEWORK = {
 
 }
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'yzkitty.hopto.orgв']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'yzkitty.hopto.org']
+
+DJOSER = {
+    'PERMISSIONS': {
+        'user_list': ['rest_framework.permissions.AllowAny'],
+    }
+}
